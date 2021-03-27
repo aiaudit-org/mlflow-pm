@@ -36,9 +36,9 @@ class App extends Component {
           <ErrorModal />
           {process.env.HIDE_HEADER === 'true' ? null : (
             <header className='App-header'>
-              <div className='mlflow-logo'>
+              <div className='project-logo'>
                 <Link to={Routes.rootRoute} className='App-mlflow'>
-                  <img className='mlflow-logo' alt='MLflow' src={logo} />
+                  <img className='mlflow-logo' alt='perturbed minds' src="https://aiaudit.org/assets/img/pm-flow.png" />
                 </Link>
               </div>
               <div className='header-route-links'>
@@ -63,6 +63,26 @@ class App extends Component {
                     <span>Models</span>
                   </div>
                 </NavLink>
+                <a href={'https://github.com/aiaudit-org/perturbed-minds'}>
+                  <div className='github'>
+                    <span>Code</span>
+                  </div>
+                </a>
+                <a href={'https://aiaudit-org.github.io/perturbed-minds'}>
+                  <div className='github'>
+                    <span>Project site</span>
+                  </div>
+                </a>
+              </div>
+              <div className='org-logo'>
+                  <Link to="https://aiaudit.org/" className='App-mlflow'>
+                    <img className='org-logo' alt='aiaudit' src={logo} />
+                  </Link>
+              </div>
+              <div className='mlflow-logo'>
+                  <Link to="https://mlflow.org/" className='App-mlflow'>
+                    <img className='mlflow-logo' alt='MLflow' src="https://aiaudit.org/assets/img/aiaudit.png" />
+                  </Link>
               </div>
               <div className='header-links'>
                 <a href={'https://github.com/mlflow/mlflow'}>
