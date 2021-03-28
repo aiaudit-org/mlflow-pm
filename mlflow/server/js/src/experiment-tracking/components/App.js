@@ -38,7 +38,7 @@ class App extends Component {
             <header className='App-header'>
               <div className='project-logo'>
                 <Link to={Routes.rootRoute} className='App-mlflow'>
-                  <img className='mlflow-logo' alt='perturbed minds' src="https://aiaudit.org/assets/img/pm-flow.png" />
+                  <img className='project-logo' alt='perturbed minds' src="https://aiaudit.org/assets/img/pm-flow.png" />
                 </Link>
               </div>
               <div className='header-route-links'>
@@ -63,6 +63,8 @@ class App extends Component {
                     <span>Models</span>
                   </div>
                 </NavLink>
+                &nbsp;
+                &nbsp;
                 <a href={'https://github.com/aiaudit-org/perturbed-minds'}>
                   <div className='github'>
                     <span>Code</span>
@@ -75,14 +77,14 @@ class App extends Component {
                 </a>
               </div>
               <div className='org-logo'>
-                  <Link to="https://aiaudit.org/" className='App-mlflow'>
-                    <img className='org-logo' alt='aiaudit' src={logo} />
-                  </Link>
+                  <a href={'https://aiaudit.org/'}>
+                    <img className='org-logo' alt='aiaudit.org' src="https://aiaudit.org/assets/img/aiaudit.png" />
+                  </a>
               </div>
               <div className='mlflow-logo'>
-                  <Link to="https://mlflow.org/" className='App-mlflow'>
-                    <img className='mlflow-logo' alt='MLflow' src="https://aiaudit.org/assets/img/aiaudit.png" />
-                  </Link>
+                      <a href={'https://mlflow.org/'}>
+                          <img className='mlflow-logo' alt='MLflow' src={logo} />
+                      </a>
               </div>
               <div className='header-links'>
                 <a href={'https://github.com/mlflow/mlflow'}>
